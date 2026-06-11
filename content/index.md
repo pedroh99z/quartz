@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Pedroh99z - Wiki
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Bem-vindo a minha Wiki pessoal. Aqui estão reunidas meus trabalhos, minhas aulas, listas de exercícios, etc, para fácil acesso. Para encontrar qualquer tipo de conteúdo, basta pesquisar por termos relevantes, ou procurar no explorador.
