@@ -18,11 +18,13 @@ valor exato e o valor calculado (para isto, aproxime o valor exato para $0.30116
 
 
 2. Use a regra de Simpson para estimar o valor da seguinte integral:
+
 $$\int_0^1 (1 - x^2)^{3/2}\ dx.$$
 
 
 
 3. Use a regra do trapézio para estimar a seguinte integral:
+
 $$\int_0^1 xe^{-x^2}\ dx.$$
 
 
@@ -48,7 +50,10 @@ b)  $\int_0^1 (1 + x^2)^{3/2} \ dx$.
 **Dica:** lembre-se que $h = (b-a)/(2n)$. Além disso, lembre-se que uma cota superior (estimativa) para o erro cometido por este método foi calculada em aula.
 
 7. Usando $n=3$, calcule a seguinte integral pela regra de Gauss-Legendre:
-$$\int_1^3 \frac{(sen (x))^2}{x}\ dx.$$ **Dica:** será necessário realizar uma mudança de variáveis para reescrever essa integral em um formato adequado para o uso dessa técnica de integração numérica.
+
+$$\int_1^3 \frac{(sen (x))^2}{x}\ dx.$$
+
+**Dica:** será necessário realizar uma mudança de variáveis para reescrever essa integral em um formato adequado para o uso dessa técnica de integração numérica.
 
 # Gabarito 
 

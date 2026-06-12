@@ -4,50 +4,91 @@ title: Lista 2 - Aproximação a Soluções de EDOs - Cálculo Numérico
 
 1. Utilizando o método de Taylor de ordem 2:
 
-a)  Resolva $$\left\{\begin{matrix}
+a)  Resolva 
+
+$$
+\left\{\begin{matrix}
         y' &=& -xy + \frac{1}{y^2}\\
         y(1) &=& 1
-    \end{matrix}\right.$$ de $x = 1$ para $x=2$ e passo $h = 0.25$.
+    \end{matrix}\right.
+$$
+    
+de $x = 1$ para $x=2$ e passo $h = 0.25$.
 
-b)  Resolva $$\left\{\begin{matrix}
+b)  Resolva 
+
+$$
+\left\{\begin{matrix}
         y' &=& \frac{1}{x^2} - \frac{y}{x} - y^2\\
         y(1) &=& -1
-    \end{matrix}\right.$$ de $x = 1$ para $x=2$ e passo $h = 0.25$.
+    \end{matrix}\right.
+$$ 
+
+de $x = 1$ para $x=2$ e passo $h = 0.25$.
 
 
 
 2. Utilizando o método de Euler:
 
-a)  Resolva $$\left\{\begin{matrix}
+a)  Resolva 
+
+$$
+\left\{\begin{matrix}
         y' &=& x + y\\
         y(0) &=& 1
-    \end{matrix}\right.$$ de $x = 0$ para $x=1$ e passo $h = 0.25$.
+    \end{matrix}\right.
+$$ 
+de $x = 0$ para $x=1$ e passo $h = 0.25$.
 
-b)  Resolva $$\left\{\begin{matrix}
+b)  Resolva 
+
+$$
+\left\{\begin{matrix}
         x y' &=& x - y\\
         y(2) &=& 2
-    \end{matrix}\right.$$ de $x = 2$ para $x=3$ e passo $h = 0.25$.
+    \end{matrix}\right.
+$$
+    
+	 de $x = 2$ para $x=3$ e passo $h = 0.25$.
 
 
 
 3. Utilizando o método de Euler modificado:
 
-a)  Resolva $$\left\{\begin{matrix}
+a)  Resolva 
+
+$$
+\left\{\begin{matrix}
         y' + y &=& e^{-x}\\
         y(0) &=& 0
-    \end{matrix}\right.$$ de $x = 0$ para $x=1$ e passo $h = 0.25$.
+    \end{matrix}\right.
+$$
+    
+de $x = 0$ para $x=1$ e passo $h = 0.25$.
 
-b)  Resolva $$\left\{\begin{matrix}
+b)  Resolva 
+
+$$
+\left\{\begin{matrix}
         y' &=& \frac{1}{x^2} - \frac{y}{x} - y^2\\
         y(1) &=& -1
-    \end{matrix}\right.$$ de $x = 1$ para $x=3$ e passo $h = 0.5$.
+    \end{matrix}\right.
+$$
+    
+de $x = 1$ para $x=3$ e passo $h = 0.5$.
 
 
 
-4. Resolva $$\left\{\begin{matrix}
+4. Resolva
+
+$$
+\left\{\begin{matrix}
     y' &=& -2 y\\
     y(0) &=& 1
-\end{matrix}\right.$$ de $x = 0$ para $x = 2$, com $h = 0.5$,
+\end{matrix}\right.
+$$
+
+de $x = 0$ para $x = 2$, com $h = 0.5$,
 utilizando:
 
 a)  Runge-Kutta de 3ª Ordem;
@@ -151,14 +192,22 @@ b\)
 
 Exercício 5:    
 
-a) $$\left\{\begin{matrix}
+a) 
+$$
+\left\{\begin{matrix}
     z' &=& 2 (e^{2x} - y^2)^{1/2}\\
     z (0) &=& 1\\
     y' &=& z\\
     y (0) &=& 0
-\end{matrix}\right.$$ b) $$\left\{\begin{matrix}
+\end{matrix}\right.
+$$
+
+b) 
+$$
+\left\{\begin{matrix}
     z' &=& 2y^{3}\\
     z (1) &=& -1\\
     y' &=& z\\
     y (1) &=& 1
-\end{matrix}\right.$$
+\end{matrix}\right.
+$$
