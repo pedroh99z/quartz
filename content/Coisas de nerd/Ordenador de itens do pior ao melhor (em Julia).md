@@ -103,20 +103,20 @@ O código acima vai pegar uma lista de *strings* (textos), vai escolher dois e p
 
 Para testar o código, eu resolvi listar os jogos da franquia Kingdom Hearts do pior ao melhor **na minha opinião**. Primeiramente, vou listar todos os jogos lançados até o momento abaixo:
 
- - ✅ **Kingdom Hearts (2002)** - PlayStation 2 
- - ❌ **Kingdom Hearts: Chain of Memories (2004)** - Game Boy Advance
- - ✅ **Kingdom Hearts II (2005)** - PlayStation 2
- - ✅ **Kingdom Hearts Re:Chain of Memories (2007)** - PlayStation 2
- - ❌ **Kingdom Hearts Coded (2008)** - Celulares
- - ✅ **Kingdom Hearts 358/2 Days (2009)** - Nintendo DS
- - ✅ **Kingdom Hearts Birth by Sleep (2010)** - PlayStation Portable (PSP)
- - ✅ **Kingdom Hearts Re:coded (2010)** - Nintendo DS
- - ✅ **Kingdom Hearts 3D: Dream Drop Distance (2012)** - Nintendo 3DS
- - ✅ **Kingdom Hearts χ chi / Unchained χ / Union χ (2013–2017)** - Navegadores e Mobile
- - ❌ **Kingdom Hearts 0.2 Birth by Sleep** – A Fragmentary Passage (2017) - PlayStation 4
- - ✅ **Kingdom Hearts III (2019)** - PlayStation 4, Xbox One, PC 
- - ❌ **Kingdom Hearts Dark Road (2020)** - Mobile
- - ❌ **Kingdom Hearts Melody of Memory (2020)** - PlayStation 4, Xbox One, Nintendo Switch, PC
+ - ✅ **Kingdom Hearts (2002)** - *PlayStation 2* 
+ - ❌ **Kingdom Hearts: Chain of Memories (2004)** - *Game Boy Advance*
+ - ✅ **Kingdom Hearts II (2005)** - *PlayStation 2*
+ - ✅ **Kingdom Hearts Re:Chain of Memories (2007)** - *PlayStation 2*
+ - ❌ **Kingdom Hearts Coded (2008)** - *Celulares*
+ - ✅ **Kingdom Hearts 358/2 Days (2009)** - *Nintendo DS*
+ - ✅ **Kingdom Hearts Birth by Sleep (2010)** - *PlayStation Portable (PSP)*
+ - ✅ **Kingdom Hearts Re:coded (2010)** - *Nintendo DS*
+ - ✅ **Kingdom Hearts 3D: Dream Drop Distance (2012)** - *Nintendo 3DS*
+ - ✅ **Kingdom Hearts χ chi / Unchained χ / Union χ (2013–2017)** - *Navegadores e Mobile*
+ - ❌ **Kingdom Hearts 0.2 Birth by Sleep** – A Fragmentary Passage (2017) - *PlayStation 4*
+ - ✅ **Kingdom Hearts III (2019)** - *PlayStation 4, Xbox One, PC* 
+ - ❌ **Kingdom Hearts Dark Road (2020)** - *Mobile*
+ - ❌ **Kingdom Hearts Melody of Memory (2020)** - *PlayStation 4, Xbox One, Nintendo Switch, PC*
 
 Os itens marcados nesta lista com um ✅ são os jogos que eu já joguei. Para fazer as comparações, considerei apenas os jogos que eu já tinha jogado. Após fazer as comparações com o auxilio do meu programa, eu obtive o seguinte resultado:
 
