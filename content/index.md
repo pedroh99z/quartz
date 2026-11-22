@@ -10,30 +10,21 @@ Bem-vindo a minha Wiki pessoal. Aqui estão reunidos meus trabalhos, minhas aula
 
 Uma musiquinha para ouvir de fundo enquanto navega pelo digital garden.
 <script>
+
 function sortear(porcentagem) {
+    if (porcentagem < 0 || porcentagem > 100) {
+        throw new Error("A chance deve estar entre 0 e 100.");
+    }
 
-if (porcentagem < 0 || porcentagem > 100) {
-
-throw new Error("A chance deve estar entre 0 e 100.");
-
+    return Math.random() * 100 < porcentagem;
 }
-
-  
-
-return Math.random() * 100 < porcentagem;
-
-}  
 
 var link = "";
 
 if (sortear(3.14)) {
-
-link = "https://www.youtube.com/watch?v=Ey8wSKvxWfI"; // rickroll
-
+    link = "https://www.youtube.com/watch?v=Ey8wSKvxWfI";
 } else {
-
-link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // musica verdadeira
-
+    link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 }
 
 const elemento = document.createElement("a");
