@@ -24,6 +24,8 @@ return Math.random() * 100 < porcentagem;
 
 }  
 
+var link = "";
+
 if (sortear(3.14)) {
 
 var link = "https://www.youtube.com/watch?v=Ey8wSKvxWfI"; // rickroll
