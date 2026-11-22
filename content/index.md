@@ -10,7 +10,6 @@ Bem-vindo a minha Wiki pessoal. Aqui estão reunidos meus trabalhos, minhas aula
 
 Uma musiquinha para ouvir de fundo enquanto navega pelo digital garden.
 <script>
-
 function sortear(porcentagem) {
     if (porcentagem < 0 || porcentagem > 100) {
         throw new Error("A chance deve estar entre 0 e 100.");
@@ -35,7 +34,6 @@ elemento.rel = "noopener noreferrer";
 elemento.textContent = "Clique aqui!";
 
 document.body.appendChild(elemento);
-
 </script>
 
 Esteja avisado que existe uma chance de 3.14% de você sofrer um rickroll.
