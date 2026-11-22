@@ -28,11 +28,11 @@ var link = "";
 
 if (sortear(3.14)) {
 
-var link = "https://www.youtube.com/watch?v=Ey8wSKvxWfI"; // rickroll
+link = "https://www.youtube.com/watch?v=Ey8wSKvxWfI"; // rickroll
 
 } else {
 
-var link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // musica verdadeira
+link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // musica verdadeira
 
 }
 
