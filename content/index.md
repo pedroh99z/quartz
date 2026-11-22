@@ -24,9 +24,9 @@ function sortear(porcentagem) {
 var link = "";
 
 if (sortear(3.14)) {
-    link = "https://www.youtube.com/watch?v=Ey8wSKvxWfI";
-} else {
     link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+} else {
+    link = "https://www.youtube.com/watch?v=Ey8wSKvxWfI";
 }
 
 const elemento = document.getElementById("link-musica");
