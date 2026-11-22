@@ -9,6 +9,9 @@ Bem-vindo a minha Wiki pessoal. Aqui estão reunidos meus trabalhos, minhas aula
 #### 🎵 Música de fundo
 
 Uma musiquinha para ouvir de fundo enquanto navega pelo digital garden.
+
+<a id="link-musica" href="#">Clique aqui!</a>
+
 <script>
 function sortear(porcentagem) {
     if (porcentagem < 0 || porcentagem > 100) {
@@ -26,14 +29,11 @@ if (sortear(3.14)) {
     link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 }
 
-const elemento = document.createElement("a");
+const elemento = document.getElementById("link-musica");
 
 elemento.href = link;
 elemento.target = "_blank";
 elemento.rel = "noopener noreferrer";
-elemento.textContent = "Clique aqui!";
-
-document.body.appendChild(elemento);
 </script>
 
 Esteja avisado que existe uma chance de 3.14% de você sofrer um rickroll.
