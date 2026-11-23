@@ -1,8 +1,10 @@
 ---
-title: Pedroh99z - Wiki
+title: Pedroh99z - Digital Garden
 ---
 
-Bem-vindo a minha Wiki pessoal. Aqui estão reunidos meus trabalhos, minhas aulas, listas de exercícios, etc, para fácil acesso. Para encontrar qualquer tipo de conteúdo, basta pesquisar por termos relevantes, ou procurar no explorador. Esta Wiki está em constante desenvolvimento, então novos conteúdos, bem como correções, podem chegar a qualquer momento.
+Bem-vindo ao meu *digital garden* (jardim digital). Este é um espaço onde pretendo compartilhar algumas coisas que aprendi, e que talvez possam ser úteis para outras pessoas. Além disso, eu reuni aqui alguns dos meus trabalhos, aulas, listas de exercícios, etc.
+
+Para encontrar qualquer tipo de conteúdo, basta pesquisar por termos relevantes, ou procurar no explorador. Assim como em qualquer outro digital garden, as notas presentes aqui estão em constante desenvolvimento, e portanto, novos conteúdos, bem como correções, podem chegar a qualquer momento. 
 
 ---
 
@@ -10,30 +12,4 @@ Bem-vindo a minha Wiki pessoal. Aqui estão reunidos meus trabalhos, minhas aula
 
 Uma musiquinha para ouvir de fundo enquanto navega pelo digital garden.
 
-<a id="link-musica" href="#">Clique aqui!</a>
-
-<script>
-function sortear(porcentagem) {
-    if (porcentagem < 0 || porcentagem > 100) {
-        throw new Error("A chance deve estar entre 0 e 100.");
-    }
-
-    return Math.random() * 100 < porcentagem;
-}
-
-var link = "";
-
-if (sortear(3.14)) {
-    link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-} else {
-    link = "https://www.youtube.com/watch?v=Ey8wSKvxWfI";
-}
-
-const elemento = document.getElementById("link-musica");
-
-elemento.href = link;
-elemento.target = "_blank";
-elemento.rel = "noopener noreferrer";
-</script>
-
-Esteja avisado que existe uma chance de 3.14% de você sofrer um rickroll.
+<a href="https://www.youtube.com/watch?v=Ey8wSKvxWfI" target="_blank" rel="noopener noreferrer" >Clique aqui!</a>
