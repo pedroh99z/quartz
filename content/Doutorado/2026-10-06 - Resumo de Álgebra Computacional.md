@@ -191,19 +191,93 @@ Seja $A \in \mathbb{R}^{m \times n}$ tal que $posto(A) = r$ (ou $rank(A) = r$), 
 
 # Problema de Quadrados Mínimos
 
-**(Vou fazer esse resumo depois)**
+O seguinte problema aparece em quase todas as áreas em que a matemática é aplicada:
+
+Considere um experimento onde temos:
+
+- $m$ observações/medições de algum fenômeno $b_1, b_2, \dots, b_m$;
+- Obtidas em pontos discretos $t_1, \dots, t_m$ (por exemplo, tempo).
+
+Com isso, obtemos o conjunto de dados:
+$$
+D = \{(t_1, b_1),\ \dots,\ (t_m, b_m)\}.
+$$
+Com base nessas observações, o problema é fazer estimativas em pontos não observados, digamos, $\hat{t}$. Uma estratégia padrão é encontrar a equação de uma curva $y = f (t)$ que melhor se ajusta aos dados em $D$, de forma que o fenômeno possa ser estimado em qualquer ponto $\hat{t}$, sendo $\hat{y} = f(\hat{t})$.
+
+Suponha que a relação entre os dados seja considerada **linear**. Logo, queremos encontrar coeficientes $\alpha$ e $\beta$ tais que
+$$
+b = \alpha + \beta t,
+$$
+onde $b = (b_1, \dots, b_m)$ e $t = (t_1, \dots, t_m)$ são vetores que contém as entradas $b_i$ e $t_i$, respectivamente. Matricialmente,
+$$
+\begin{bmatrix}
+1 & t_1\\
+\vdots & \vdots\\
+1 & t_m
+\end{bmatrix} \begin{bmatrix}
+\alpha\\
+\beta
+\end{bmatrix} = \begin{bmatrix}
+b_1\\
+\vdots\\
+b_m
+\end{bmatrix}.
+$$
+De modo geral, considera-se um sistema $Ax = b$, com $A \in \mathbb{R}^{m \times n}$, com $m > n$, isto é, mais equações do que incógnitas. Sistemas assim são chamados **sobredeterminados**, e geralmente não possuem solução exata. Isso geralmente ocorre, pois $b$ não está em $R(A)$, isto é, não está no espaço imagem de $A$.
+
+O problema de quadrados mínimos procura resolver:
+$$
+\min_{x \in \mathbb{R}^{n}} ||Ax - b||_2^2. 
+$$
+Resolver o problema acima é o mesmo que encontrar $\hat{x}$ tal que $p = A \hat{x}$ esteja o mais próximo possível de $b$. O vetor $p$ pode ser visto como a projeção ortogonal de $b$ no espaço imagem de $A$. Visto de outra forma, podemos resolver o problema acima usando cálculo, ou até mesmo as condições necessárias de primeira ordem (se quisermos usar otimização), para concluir que, na solução, devemos ter
+$$
+A^T A \hat{x} = A^T b.
+$$
+Desse modo, resolver o problema de quadrados mínimos se resume a resolver o sistema
+$$
+A^T A x = A^T b,
+$$
+o qual pode ser obtido facilmente a partir do sistema original $Ax = b$ ao multiplicar $A^T$ de ambos os lados. As equações do sistema acima são chamadas **equações normais**.
+
+Algumas observações:
+
+- A matriz $A^T A$ é não singular exatamente quando as colunas de $A$ são linearmente independentes (a demonstração fica como exercício). Ou seja, se o posto de $A$ é $n$, então:
+	$$
+	\hat{x} = (A^T A)^{-1} A^T b,
+	$$
+	e a solução de quadrados mínimos é única.
+- A projeção ortogonal de $b$ em $R(A)$ é o ponto mais próximo $A \hat{x}$:
+	$$
+	p = A \hat{x} = A (A^T A)^{-1} A^T b.
+	$$
+- Se $b$ estiver em $R(A)$, então sabemos que $b = Ax$, logo a sua projeção $p = A(A^TA)^{-1} A^T b = A (A^T A)^{-1} A^T A x = A I x = A x = b$.
 
 # Fatoração QR (por Gram-Schmidt)
 
 ---
 
 ### Revisão de Gram-Schmidt
-**(Vou fazer esse resumo mais completo depois, colocando a construção e a intuição)**
 
-Considere vetores linearmente independentes $u_1, \dots, u_n$. Vamos ortogonalizar esses vetores pelo processo de Gram-Schmidt, produzindo vetores $v_1, \dots, v_n$ ortogonais dois a dois entre si. Para isso, vamos usar a seguinte fórmula:
+Considere vetores linearmente independentes $u_1, \dots, u_n$. Vamos ortogonalizar esses vetores pelo processo de Gram-Schmidt, produzindo vetores $v_1, \dots, v_n$ ortogonais dois a dois entre si. Antes de fornecer a fórmula geral, vamos motivar fazendo o caso $n = 2$. Observe a figura abaixo:
+
+![[20261125_163700.jpg]]
+
+No caso $n = 2$, faremos $v_1 = u_1$, e $v_2 = u_1 - \alpha v_1$, onde a constante $\alpha$ é escolhida de modo que $\langle v_1, v_2 \rangle = 0$. Podemos determinar o valor exato de $\alpha$ substituindo $v_2$ no produto interno:
+$$
+0 = \langle v_1, u_1 - \alpha v_1 \rangle = \langle v_1, u_1 \rangle - \alpha \langle v_1, v_1 \rangle \Leftrightarrow \alpha \langle v_1, v_1 \rangle = \langle v_1, u_1 \rangle
+$$
+$$
+\Leftrightarrow \alpha = \frac{\langle v_1, u_1 \rangle}{\langle v_1, v_1 \rangle} = \frac{v_1^T u_1}{v_1^T v_1}.
+$$
+Desse modo,
+$$
+v_2 = u_1 - \frac{v_1^T u_1}{v_1^T v_1} v_1.
+$$
+No caso geral, isto é, para $n$ qualquer, vamos ter a seguinte fórmula:
 $$
 v_i = u_i - \sum_{k=1}^{i-1} \frac{v_k^T u_i}{v_k^T v_k} v_k.
 $$
+A fórmula acima pode ser obtida de modo análogo. Basta subtrair de $u_i$ múltiplos dos vetores anteriores a $v_i$ (cujos índices vão de $1$ até $i-1$), e lembrar que sempre teremos $\langle v_i , v_j \rangle = 0$, para todo $i \neq j$, o que permitirá determinar quem são cada um desses múltiplos.
 
 ---
 
@@ -563,7 +637,7 @@ com $p = \min \{ m, n \}$ e $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_p \g
 $$
 A = U \Sigma V^T,
 $$
-onde $\sigma = diag(\sigma_1, \dots, \sigma_p) \in \mathbb{R}^{m \times n}$. Algo que precisa ficar claro é que $\Sigma$ não necessariamente é diagonal, pois pode não ser quadrada. Chamamos os $\sigma_i$'s de **valores singulares de $A$**, $u_i$'s de **vetores singulares de $A$ à esquerda** e $v_i$'s de **valores singulares à direita**.
+onde $\sigma = diag(\sigma_1, \dots, \sigma_p) \in \mathbb{R}^{m \times n}$. Algo que precisa ficar claro é que $\Sigma$ não necessariamente é diagonal, pois pode não ser quadrada. Chamamos os $\sigma_i$'s de **valores singulares de $A$**, $u_i$'s de **vetores singulares de $A$ à esquerda** e $v_i$'s de **vetores singulares à direita**.
 
 Para evidenciar que $\Sigma$ não precisa ser diagonal, veja os seguintes exemplos:
 
@@ -573,7 +647,7 @@ Para evidenciar que $\Sigma$ não precisa ser diagonal, veja os seguintes exempl
 
 Supondo posto de $A$ igual a $r$, e que a decomposição SVD é dada pelo teorema acima, temos
 $$
-\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r > \sigma_{r+1} = \sigma_{r+2} = \cdots = \sigma_r = 0.
+\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r > \sigma_{r+1} = \sigma_{r+2} = \cdots = \sigma_p = 0.
 $$
 Observe que $A = U \Sigma V^T$ e $A^T = V \Sigma^T U^T$ se reescrevem como $AV = U \Sigma$ e $A^T U = V \Sigma^T$. Como consequência, temos
 $$
@@ -712,7 +786,7 @@ Assim, temos $S^{-1} A S = \Lambda$.
 	1. Se $A$ possui autovalores distintos, então seus $n$ autovetores são LI, e portanto, $A$ pode ser diagonalizada.
 	2. Nem todas as matrizes são diagonalizáveis, pois nem todas possuem $n$ autovetores LI.
 
-**Definição:** As matrize $A$ e $B$ $n \times n$ são ditas semelhantes se existir uma matriz não singular $S_{n \times n}$ tal que
+**Definição:** As matrizez $A$ e $B$ $n \times n$ são ditas semelhantes se existir uma matriz não singular $S_{n \times n}$ tal que
 $$
 B = S^{-1} A S.
 $$
