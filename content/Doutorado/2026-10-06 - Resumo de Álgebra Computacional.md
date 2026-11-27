@@ -262,16 +262,16 @@ Considere vetores linearmente independentes $u_1, \dots, u_n$. Vamos ortogonaliz
 
 ![[20261125_163700.jpg]]
 
-No caso $n = 2$, faremos $v_1 = u_1$, e $v_2 = u_1 - \alpha v_1$, onde a constante $\alpha$ é escolhida de modo que $\langle v_1, v_2 \rangle = 0$. Podemos determinar o valor exato de $\alpha$ substituindo $v_2$ no produto interno:
+No caso $n = 2$, faremos $v_1 = u_1$, e $v_2 = u_2 - \alpha v_1$, onde a constante $\alpha$ é escolhida de modo que $\langle v_1, v_2 \rangle = 0$. Podemos determinar o valor exato de $\alpha$ substituindo $v_2$ no produto interno:
 $$
-0 = \langle v_1, u_1 - \alpha v_1 \rangle = \langle v_1, u_1 \rangle - \alpha \langle v_1, v_1 \rangle \Leftrightarrow \alpha \langle v_1, v_1 \rangle = \langle v_1, u_1 \rangle
+0 = \langle v_1, u_2 - \alpha v_1 \rangle = \langle v_1, u_2 \rangle - \alpha \langle v_1, v_1 \rangle \Leftrightarrow \alpha \langle v_1, v_1 \rangle = \langle v_1, u_2 \rangle
 $$
 $$
-\Leftrightarrow \alpha = \frac{\langle v_1, u_1 \rangle}{\langle v_1, v_1 \rangle} = \frac{v_1^T u_1}{v_1^T v_1}.
+\Leftrightarrow \alpha = \frac{\langle v_1, u_2 \rangle}{\langle v_1, v_1 \rangle} = \frac{v_1^T u_2}{v_1^T v_1}.
 $$
 Desse modo,
 $$
-v_2 = u_1 - \frac{v_1^T u_1}{v_1^T v_1} v_1.
+v_2 = u_2 - \frac{v_1^T u_2}{v_1^T v_1} v_1.
 $$
 No caso geral, isto é, para $n$ qualquer, vamos ter a seguinte fórmula:
 $$
